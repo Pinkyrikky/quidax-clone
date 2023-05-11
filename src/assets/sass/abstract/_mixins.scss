@@ -1,0 +1,35 @@
+@mixin lightTheme{
+    --clr-primary-400: hsl(253, 58%, 33%);
+    --clr-primary-300: hsl(332, 79%, 65%);
+    --clr-primary-200: hsl(0, 0%, 100%);
+    --clr-primary-text-400: hsl(251, 52%, 19%);
+    --clr-primary-text-300: hsl(245, 70%, 30%);
+    --clr-primary-text-200: hsl(252, 5%, 42%);
+    --clr-primary-text-100: hsl(0, 0%, 100%);
+    --clr-hover: hsl(145, 60%, 62%);
+
+}
+
+@mixin darkTheme{
+    --clr-primary-400: hsl(253, 58%, 33%);
+    --clr-primary-300: hsl(332, 79%, 65%);
+    --clr-primary-200: hsl(0, 1%, 17%);
+    --clr-primary-text-400: hsl(251, 52%, 19%);
+    --clr-primary-text-300: hsl(245, 70%, 30%);
+    --clr-primary-text-200: hsl(252, 5%, 42%);
+    --clr-primary-text-100: hsl(0, 0%, 100%);
+    --clr-hover: hsl(145, 60%, 62%);
+
+}
+
+@mixin fromTablet{
+    @media(min-width: 50em){
+        @content;
+    }
+}
+
+@mixin fromDesktop{
+    @media(min-width: 80.3125em){
+        @content;
+    }
+}
